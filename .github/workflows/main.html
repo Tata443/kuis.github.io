@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restoran Padang Sederhana</title>
+    <style>
+        /* Internal CSS */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #0000ff; /* Warna latar belakang header */
+            color: white;
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 24px;
+        }
+        header img {
+            width: 50px; /* Ukuran logo */
+            height: auto;
+            margin-right: 15px;
+        }
+        nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: white;
+        }
+        nav a:hover {
+            color: #ffd700;
+        }
+        main {
+            padding: 20px;
+        }
+        img {
+            width: 100%;
+            max-width: 600px;
+            height: auto;
+            border-radius: 10px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        table, th, td {
+            border: 1px solid #ddd;
+        }
+        th, td {
+            padding: 15px;
+            text-align: center;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            padding: 20px;
+            text-align: left;
+        }
+        footer h3 {
+            margin-top: 0;
+        }
+        footer p, footer form {
+            margin: 10px 0;
+        }
+        footer form label {
+            display: block;
+            margin: 5px 0;
+        }
+        footer form input[type="text"], 
+        footer form input[type="date"] {
+            width: 100%;
+            padding: 8px;
+            margin: 5px 0 10px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+        footer form input[type="radio"], 
+        footer form input[type="checkbox"] {
+            margin-right: 10px;
+        }
+        footer form input[type="submit"] {
+            background-color: #ff6347;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        footer form input[type="submit"]:hover {
+            background-color: #ff4500;
+        }
+        footer div.social-icons {
+            margin-top: 15px;
+        }
+        footer div.social-icons a img {
+            margin: 0 10px;
+        }
+        iframe {
+            width: 100%;
+            height: 300px;
+            border: none;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQaoU2ly2wz-TCehlglA94EvUyJtYXuObg6J4gR3-u5cvoNUp3TOyjMMVFD9sUBsI1eM4E&usqp=CAU" alt="Logo Restoran"> <!-- Ganti "logo.png" dengan path logo Anda -->
+        <h1>Restoran Padang Sederhana</h1>
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#menu">Menu</a>
+            <a href="#about">About Us</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <!-- Konten Utama -->
+    <main>
+        <section id="home">
+            <h2>Selamat Datang di Restoran Padang Sederhana</h2>
+            <p>Hidangan Otentik Khas Minang yang dibuat dari resep turun temurun. Nikmati cita rasa nusantara yang tak tertandingi.</p>
+            <img src="https://assets.promediateknologi.id/crop/5x5:1048x689/750x500/webp/photo/2023/06/28/IMG_20230628_174241-2969331116.jpg" alt="Gambar Restoran" style="display: block; margin: 0 auto;">
+        </section>
+
+        <section id="menu">
+            <h2>Menu Makanan</h2>
+            <!-- Tabel Menu -->
+            <table>
+                <thead>
+                    <tr>
+                        <th>Gambar</th>
+                        <th>Nama Makanan</th>
+                        <th>Harga</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><img src="https://www.frisianflag.com/storage/app/media/uploaded-files/rendang-padang.jpg" alt="Rendang" width="100"></td>
+                        <td>Rendang</td>
+                        <td>Rp50.000</td>
+                    </tr>
+                    <tr>
+                        <td><img src="https://www.masakapahariini.com/wp-content/uploads/2022/06/resep-gulai-tunjang-500x300.jpg" alt="Tunjang" width="100"></td>
+                        <td>Tunjang</td>
+                        <td>Rp45.000</td>
+                    </tr>
+                    <tr>
+                        <td><img src="https://asset.kompas.com/crops/sOuyO86K4EXjTCRmHWBd4caSFKc=/38x72:838x605/1200x800/data/photo/2022/04/02/6247cfd4495ba.jpg" alt="Dendeng" width="100"></td>
+                        <td>Dendeng</td>
+                        <td>Rp45.000</td>
+                    </tr>
+                    <tr>
+                        <td><img src="https://assets-a1.kompasiana.com/items/album/2023/05/26/sambalado-tanak-khas-minang-foto-resep-utama-646ff18a08a8b563052c3682.jpg" alt="Samba Lado Tanak" width="100"></td>
+                        <td>Samba Lado Tanak</td>
+                        <td>Rp25.000</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+  <section id="menu">
+            <h2>Menu Minuman</h2>
+            <!-- Tabel Menu -->
+            <table>
+                <thead>
+                    <tr>
+                        <th>Gambar</th>
+                        <th>Nama Makanan</th>
+                        <th>Harga</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><img src="https://awsimages.detik.net.id/community/media/visual/2022/05/23/ilustrasi-resep-cincau-hijau_169.jpeg?w=1200" alt="Aia Aka" width="100"></td>
+                        <td>Aia Aka</td>
+                        <td>Rp15.000</td>
+                    </tr>
+                    <tr>
+                        <td><img src="https://nilaigizi.com/assets/images/produk/produk_1578041377.jpg" alt="Teh es" width="100"></td>
+                        <td>Teh es</td>
+                        <td>Rp10.000</td>
+                    </tr>
+                    <tr>
+                        <td><img src="https://cdn.rri.co.id/berita/Palu/o/1716337508960-201abba317b6d957739d49d4e3d6634a/t29s1vpttorb9vc.jpeg" alt="Jus" width="100"></td>
+                        <td>Jus</td>
+                        <td>Rp15.000</td>
+                    </tr>
+                    <tr>
+                        <td><img src="https://i0.wp.com/deltacoffee.co.id/wp-content/uploads/2024/03/Kopi-Tubruk.jpg" alt="Kopi Tubruk" width="100"></td>
+                        <td>Kopi Tubruk</td>
+                        <td>Rp10.000</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <section id="testimonials">
+            <h2>Testimoni Pelanggan</h2>
+            <ol>
+                <li>"Makanan di sini luar biasa,Tempat bersih, pelayanan cepat dan ramah!" – kepin</li>
+                <li>"Tempat yang sempurna untuk makan bersama keluarga besar." – boy</li>
+            </ol>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer id="contact">
+        <h3>Kontak Kami</h3>
+        <p>Alamat: Jl. Rasuna Said No. 81A, Padang</p>
+        <p>Telepon: (081) 87654321 | Email: info@restoranpadangsederhana.com</p>
+        
+        <!-- Formulir Reservasi -->
+        <h3>Formulir Reservasi</h3>
+        <form>
+            <label for="name">Nama:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="date">Tanggal Reservasi:</label>
+            <input type="date" id="date" name="date" required>
+
+            <label>Jumlah Tamu:</label>
+            <input type="radio" id="2pax" name="guests" value="2" required> 2 Orang<br>
+            <input type="radio" id="4pax" name="guests" value="4"> 4 Orang<br>
+            <input type="radio" id="morepax" name="guests" value="more"> Lebih dari 4 Orang<br><br>
+
+            <input type="checkbox" id="terms" name="terms" required> Saya setuju dengan syarat dan ketentuan<br><br>
+
+            <input type="submit" value="Kirim">
+        </form>
+
+        <!-- Tautan Media Sosial -->
+        <div class="social-icons">
+            <h3>Ikuti Kami di Media Sosial</h3>
+            <a href="https://www.facebook.com/restoranmu" target="_blank">
+                <img src="facebook-icon.png" alt="Facebook" width="30" height="30">
+            </a>
+            <a href="https://www.instagram.com/restoranmu" target="_blank">
+                <img src="instagram-icon.png" alt="Instagram" width="30" height="30">
+            </a>
+            <a href="https://twitter.com/restoranmu" target="_blank">
+                <img src="twitter-icon.png" alt="Twitter" width="30" height="30">
+            </a>
+        </div>
+
+        <!-- Google Maps Iframe -->
+        <h3>Lokasi Kami</h3>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63828.67238420813!2d100.32598837910155!3d-0.9306384999999987!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2fd4b927d4d8b36d%3A0xff184b1deba4b689!2sRestoran%20Sederhana%20(SA)%20Rasuna%20Said!5e0!3m2!1sid!2sid!4v1731658584718!5m2!1sid!2sid" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </footer>
+
+</body>
+</html>
